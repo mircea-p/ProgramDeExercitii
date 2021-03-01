@@ -44,6 +44,9 @@ public class ExecutaExercitiiJavaFundamentals {
                 case 21:
                     Ex21GetDistinct.getDistinct();
                     break;
+                case 22:
+                    Ex22Rectangle.rectangle();
+                    break;
                 default:
                     System.out.println("Exercitiul acesta nu a fost rezolvat inca!");
             }
