@@ -1,5 +1,7 @@
 package com.company.ExercitiiJavaFundamentals;
 
+import com.company.ExercitiiJavaFundamentals.Ex23Company.Ex23Company;
+
 import java.util.Scanner;
 
 public class ExecutaExercitiiJavaFundamentals {
@@ -46,6 +48,9 @@ public class ExecutaExercitiiJavaFundamentals {
                     break;
                 case 22:
                     Ex22Rectangle.rectangle();
+                    break;
+                case 23 :
+                    Ex23Company.companyTest();
                     break;
                 default:
                     System.out.println("Exercitiul acesta nu a fost rezolvat inca!");
