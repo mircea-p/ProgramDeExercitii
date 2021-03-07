@@ -1,15 +1,18 @@
 package com.company.ExercitiiJavaFundamentals.Ex23Company;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Company {
 
     private String cname;
-    public Employee[] employees = new Employee[5];
+    public int nrAngajati;
+    public Employee[] employees = new Employee[3];
 
-    public Company(String cname){
+    public Company(String cname, int nrAng){
 
         this.cname = cname;
+        this.nrAngajati = nrAng;
     }
     public static Employee setemployees(){
         Scanner scan = new Scanner(System.in);
@@ -25,11 +28,14 @@ public class Company {
         Employee e1 = new Employee(fname, lname, age);
         return e1;
     }
-    public byte getAverageAge(){
-        byte sum = 0;
-        for( int i = 0; i <= this.employees.length; i++){
+    public int getAverageAge(){
+       int sum = 0;
+        for( int i = 0; i < employees.length; i++){
             sum += employees[i].getAge();
         }
-        return (byte) ((byte) sum/this.employees.length);
+        return  sum/employees.length;
+    }
+    public String toString(){
+        return cname + " " + " " + Arrays.toString(employees);
     }
 }

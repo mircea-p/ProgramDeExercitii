@@ -13,9 +13,11 @@ public class Employee {
     }
 
     public byte getAge() {
-        return age;
+        return this.age;
     }
 
-
+    public String toString(){
+       return firstName + " " + lastName + " " + age + " ani.";
+    }
 
 }
