@@ -11,7 +11,7 @@ public class ExecutaExercitiiJavaFundamentals {
         int alegere=1;
 
         do {
-        System.out.print("Alegeti exercitiul pe care doriti sa-l rulati, tastand un nr de la 1 la 23: ");
+        System.out.print("Alegeti exercitiul pe care doriti sa-l rulati, tastand un nr de la 1 la 27: ");
 
         Scanner scan = new Scanner(System.in);
         int nrEx=scan.nextInt();
@@ -51,6 +51,12 @@ public class ExecutaExercitiiJavaFundamentals {
                     break;
                 case 23 :
                     Ex23Company.companyTest();
+                    break;
+                case 25:
+                    Ex25LocalDateExample.localDateExample();
+                    break;
+                case 27:
+                    Ex27MathUtils.mathUtils();
                     break;
                 default:
                     System.out.println("Exercitiul acesta nu a fost rezolvat inca!");
