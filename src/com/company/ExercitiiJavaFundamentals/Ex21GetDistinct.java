@@ -11,11 +11,12 @@ public class Ex21GetDistinct {
            System.out.println("Introduceti lungimea sirului: ");
            int n = scan.nextInt();
            String[] sir = new String[n];
+           Scanner sc2 = new Scanner(System.in);
 
            System.out.println("Itroduceti datele sirului de tip String:");
-           for(int i = 0; i < n; i++){
-               sir[i] = scan.nextLine();
+           for(int i = 1; i <= n; i++){
                System.out.print(i +". ");
+               sir[i-1] = sc2.nextLine();
            }
            int eg=0;
            String[] unic = new String[n];
@@ -32,7 +33,7 @@ public class Ex21GetDistinct {
                }
            }
            System.out.println("Elementele unice ale sirului sunt: ");
-           for(int i = 0;i < n; i++)
+           for(int i = 0;i < k; i++)
                System.out.println(unic[i]);
        }
 
